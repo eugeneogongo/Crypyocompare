@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Crypyocompare</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Lets go</string>
+    <string name="btc">BTC</string>
+    <string name="txt2">txt2</string>
+    <string name="eth">ETH</string>
+    <string name="textview">TextView</string>
+    <string name="dollar">$</string>
+    <string name="dolla">$</string>
+    <string name="_1_btc">1 BTC</string>
+    <string name="_1_etc">1 ETC</string>
+    <string name="equals">=</string>
+    <string name="choose_a_currency_you_wish_to_convert">Choose a Currency you wish to convert</string>
+</resources>

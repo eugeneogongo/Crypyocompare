@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.us.all.sample.crypyocompare.activities.Convert">
+<include
+    layout="@layout/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="@dimen/cardview_default_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="53dp"
+                android:text="@string/btc" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:background="@drawable/backgroundeditext"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/txtbasecurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+
+                android:layout_toEndOf="@+id/editText"
+                android:layout_toRightOf="@+id/editText"
+                android:text="@string/textview"
+                android:layout_alignTop="@+id/textView" />
+
+            <TextView
+                android:id="@+id/txtlocatbtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText"
+                android:layout_alignEnd="@+id/txtbasecurrency"
+                android:layout_alignRight="@+id/txtbasecurrency"
+                android:text="0.0"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="53dp"
+                android:text="@string/eth" />
+
+            <EditText
+                android:id="@+id/editextbtc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt2"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:background="@drawable/backgroundeditext"/>
+
+            <TextView
+                android:id="@+id/txtbasecurrency2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_toEndOf="@+id/editextbtc"
+                android:layout_toRightOf="@+id/editextbtc"
+                android:text="@string/txt2"
+                android:layout_alignTop="@+id/txt2" />
+
+            <TextView
+                android:id="@+id/txtlocateth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editextbtc"
+                android:layout_alignEnd="@+id/txtbasecurrency2"
+                android:layout_alignRight="@+id/txtbasecurrency2"
+                android:textStyle="bold"
+                android:text="0.0" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
